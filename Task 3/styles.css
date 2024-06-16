@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('tea.png') no-repeat center center fixed; /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #4CAF50;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.tasks {
+    margin-top: 20px;
+}
+
+.tasks h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.tasks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tasks li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+.tasks li:hover {
+    transform: scale(1.02);
+}
+
+.tasks li.completed {
+    border-left-color: #4CAF50;
+    text-decoration: line-through;
+    color: #888;
+}
+
+.tasks li .task-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks li .task-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tasks li .task-desc {
+    font-size: 14px;
+    color: #666;
+}
+
+.tasks li .actions {
+    float: right;
+}
+
+.tasks li .actions button {
+    margin-left: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tasks li .actions button.edit {
+    background-color: #2196F3;
+}
+
+.tasks li .actions button.complete {
+    background-color: #4CAF50;
+}
+
+.tasks li .actions button:hover {
+    opacity: 0.8;
+}
